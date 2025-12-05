@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { Search } from './pages/Search';
 import { AIAssistant } from './pages/AIAssistant';
 import { Profile } from './pages/Profile';
+import { Landing } from './pages/Landing';
 import { AdminDashboard } from './components/AdminDashboard';
 import { AdminLogin } from './pages/AdminLogin';
 import { db } from './services/storage';
@@ -22,7 +23,8 @@ const App: React.FC = () => {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/browse" element={<Home />} />
           <Route path="/series" element={<Search />} />
           <Route path="/movies" element={<Search />} />
           <Route path="/latest" element={<Home />} />
