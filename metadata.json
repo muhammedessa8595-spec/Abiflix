@@ -1,0 +1,7 @@
+{
+  "name": "Abiflix",
+  "description": "A premium Netflix-style streaming application with AI-powered recommendations, comprehensive content management, and cross-platform mobile-first design.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
